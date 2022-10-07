@@ -1,10 +1,6 @@
-
 # Laravel easy filters and sort
 
 A small package that will allow you to easily and configurably filter and sort your query
-
-
-
 
 ## Features
 
@@ -12,8 +8,6 @@ A small package that will allow you to easily and configurably filter and sort y
 - Easy to set default options
 - Structures the code
 - Easily expandable
-
-
 
 ## Installation
 
@@ -25,21 +19,17 @@ Install dsoloview/laravel-filters-sort from composer
 
 ## Usage
 
-
- - [Model](###Model)
- - [Filter](###Filter)
- - [Sort](###Sort)
- - [Usage](###Paginate)
-
- 
-
+- [Model](#Model)
+- [Filter](#Filter)
+- [Sort](#Sort)
+- [Usage](#Usage)
 
 ### Model
 
 For the model, you need to add traits **HasFilters** and **HasSort**
 ![Model](https://raw.github.com/dsoloview/laravel-filters-sort/master/screenshots/Model.png)
 
-### Filter 
+### Filter
 
 Create filter class for your model and extends it from *dsoloview\LaravelFiltersSort\Filters\QueryFilter*
 
@@ -80,17 +70,6 @@ Traits add scopes `filter(QueryFilter)` and `sort(QuerySort)` to your model
 You can pass your filter and sort classes to scopes like in the screenshot.
 
 After it you can make `get()` or `paginate()` like in example.
-
-
-
-
-
-
-
-
-
-
-
 
 ## Support
 
