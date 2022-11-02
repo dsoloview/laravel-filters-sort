@@ -2,7 +2,11 @@
   "name": "dsoloview/laravel-filters-sort",
   "description": "Laravel filters and sort",
   "type": "library",
-  "keywords": ["Laravel", "Filters", "Sort"],
+  "keywords": [
+    "Laravel",
+    "Filters",
+    "Sort"
+  ],
   "license": "MIT",
   "authors": [
     {
@@ -10,15 +14,13 @@
       "email": "dsoloview44@gmail.com"
     }
   ],
-
   "minimum-stability": "stable",
   "require": {
     "php": "^8"
   },
-
   "autoload": {
     "psr-4": {
-      "dsoloview\\LaravelFiltersSort\\": "src/"
+      "dsoloview\\LaravelFiltersSort\\": "src"
     }
   }
 }
