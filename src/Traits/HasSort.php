@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 trait HasSort
 {
-    public function sort(Builder $builder, QuerySort $sort): Builder
+    public function scopeSort(Builder $builder, QuerySort $sort): Builder
     {
         return $sort->apply($builder);
     }
