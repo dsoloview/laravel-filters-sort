@@ -34,4 +34,11 @@ abstract class QuerySort
 
         return $this->builder;
     }
+
+    public static function getSortableFields(): array
+    {
+        $abstractMethods = get_class_methods(self::class);
+        $methods = get_class_methods(static::class);
+        return array_diff($methods, $abstractMethods);
+    }
 }

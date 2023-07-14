@@ -33,4 +33,11 @@ abstract class QueryFilter
 
         return $this->builder;
     }
+
+    public static function getFilterableFields(): array
+    {
+        $abstractMethods = get_class_methods(self::class);
+        $methods = get_class_methods(static::class);
+        return array_diff($methods, $abstractMethods);
+    }
 }
