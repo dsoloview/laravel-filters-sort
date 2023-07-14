@@ -5,15 +5,15 @@ namespace dsoloview\LaravelFiltersSort\Filters;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
-class QueryFilter
+abstract class QueryFilter
 {
     private Request $request;
 
     protected Builder $builder;
 
-    public function __construct(Request $request)
+    public function __construct(?Request $request)
     {
-        $this->request = $request;
+        $this->request = $request ?? request();
     }
 
     public function filters(): array
