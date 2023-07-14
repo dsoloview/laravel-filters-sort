@@ -11,7 +11,7 @@ abstract class QueryFilter
 
     protected Builder $builder;
 
-    public function __construct(?Request $request)
+    public function __construct(?Request $request = null)
     {
         $this->request = $request ?? request();
     }

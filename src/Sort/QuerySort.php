@@ -17,7 +17,7 @@ abstract class QuerySort
 
     protected const DIRECTION_DEFAULT = 'desc';
 
-    public function __construct(?Request $request)
+    public function __construct(?Request $request = null)
     {
         $request = $request ?? request();
         $this->sortBy = $request->get('sort', static::SORT_DEFAULT);
